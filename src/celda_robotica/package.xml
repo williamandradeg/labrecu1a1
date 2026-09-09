@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+<name>celda_robotica</name><version>1.0.0</version>
+<description>Celda UR3, Banda transportadora, UR5, MiR100 para ROS 2 Jazzy y Gazebo Harmonic</description>
+<maintainer email="local@example.invalid">Recuperación Práctica de Laboratorio</maintainer>
+<license>Apache-2.0</license>
+<buildtool_depend>ament_cmake</buildtool_depend>
+<depend>gz_sim_vendor</depend><depend>gz_plugin_vendor</depend>
+<exec_depend>rclpy</exec_depend><exec_depend>robot_state_publisher</exec_depend>
+<exec_depend>controller_manager</exec_depend><exec_depend>joint_trajectory_controller</exec_depend>
+<exec_depend>joint_state_broadcaster</exec_depend><exec_depend>gz_ros2_control</exec_depend>
+<exec_depend>ur_description</exec_depend><exec_depend>ur_simulation_gz</exec_depend>
+<exec_depend>ros_gz_bridge</exec_depend><exec_depend>python3-scipy</exec_depend>
+<export><build_type>ament_cmake</build_type></export>
+</package>

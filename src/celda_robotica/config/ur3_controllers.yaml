@@ -1,0 +1,16 @@
+/ur3/controller_manager:
+  ros__parameters:
+    update_rate: 250
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+/ur3/joint_trajectory_controller:
+  ros__parameters:
+    joints: [ur3_shoulder_pan_joint, ur3_shoulder_lift_joint, ur3_elbow_joint, ur3_wrist_1_joint, ur3_wrist_2_joint, ur3_wrist_3_joint]
+    command_interfaces: [position]
+    state_interfaces: [position, velocity]
+    allow_partial_joints_goal: false
+    constraints:
+      goal_time: 3.0
+      stopped_velocity_tolerance: 0.15
